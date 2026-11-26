@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151326">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>Temporizador</title>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <img src="icon.svg" alt="" width="48" height="48">
+      <h1>Temporizador</h1>
+    </header>
+    <section aria-labelledby="remaining">
+      <h2 id="remaining">Tiempo restante</h2>
+      <p id="status" role="status">Elige una fecha para empezar.</p>
+      <dl>
+        <div><dt>Días</dt><dd id="days">—</dd></div>
+        <div><dt>Horas</dt><dd id="hours">—</dd></div>
+        <div><dt>Minutos</dt><dd id="minutes">—</dd></div>
+        <div><dt>Segundos</dt><dd id="seconds">—</dd></div>
+      </dl>
+    </section>
+    <form>
+      <label for="target">Fecha y hora objetivo</label>
+      <input id="target" type="datetime-local" required>
+      <button>Guardar fecha</button>
+      <p id="save-message" role="status" hidden></p>
+    </form>
+  </main>
+</body>
+</html>
