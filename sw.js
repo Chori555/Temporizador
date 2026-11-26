@@ -1,4 +1,4 @@
-const cacheName = 'temporizador-v2';
+const cacheName = 'temporizador-v4';
 const assets = ['./', './index.html', './style.css', './app.js', './manifest.webmanifest', './icon.svg', './icon-180.png', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', event => {
